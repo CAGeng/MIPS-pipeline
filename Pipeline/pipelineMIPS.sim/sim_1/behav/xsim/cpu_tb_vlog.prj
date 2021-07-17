@@ -1,0 +1,27 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../pipelineMIPS.srcs/sources_1/new/adder.sv" \
+"../../../../pipelineMIPS.srcs/sources_1/new/alu.sv" \
+"../../../../pipelineMIPS.srcs/sources_1/new/aludec.sv" \
+"../../../../pipelineMIPS.srcs/sources_1/new/controller.sv" \
+"../../../../pipelineMIPS.srcs/sources_1/new/datapath.sv" \
+"../../../../pipelineMIPS.srcs/sources_1/new/dmem.sv" \
+"../../../../pipelineMIPS.srcs/sources_1/new/eqcmp.sv" \
+"../../../../pipelineMIPS.srcs/sources_1/new/flopr.sv" \
+"../../../../pipelineMIPS.srcs/sources_1/new/floprc.sv" \
+"../../../../pipelineMIPS.srcs/sources_1/new/hazard.sv" \
+"../../../../pipelineMIPS.srcs/sources_1/new/imem.sv" \
+"../../../../pipelineMIPS.srcs/sources_1/new/maindec.sv" \
+"../../../../pipelineMIPS.srcs/sources_1/new/mips.sv" \
+"../../../../pipelineMIPS.srcs/sources_1/new/mux2.sv" \
+"../../../../pipelineMIPS.srcs/sources_1/new/mux3.sv" \
+"../../../../pipelineMIPS.srcs/sources_1/new/regfile.sv" \
+"../../../../pipelineMIPS.srcs/sources_1/new/signext.sv" \
+"../../../../pipelineMIPS.srcs/sources_1/new/sl2.sv" \
+"../../../../cpu_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
